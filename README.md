@@ -1,1 +1,1 @@
-# BCC222
+# Exercícios das aulas de BCC222 [Programação Funcional - Haskell]
