@@ -21,3 +21,12 @@ andList (x : xs) = x && andList xs
 orList :: [Bool] -> Bool
 orList [] = False
 orList (x : xs) = x || orList xs
+
+indexOf :: Int -> [Int] -> Int
+indexOf _ [] = -1
+indexOf x xs = index x xs 0
+    where
+        index x (y:ys) ac
+            |x == y = ac
+            |otherwise = index x ys (ac+1)
+        index x [] ac = -1
